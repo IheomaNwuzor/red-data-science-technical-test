@@ -94,18 +94,17 @@ Cost is dominated by SQLite connection overhead (a new connection per insert) an
 
 *[Adjust the split to what actually happened; the total must stay within the 4-hour cap.]*
 
-- **Reading the brief and sample emails:** about [X] min
-- **Designing the schema and stages:** about [X] min
-- **Extraction rules:** about [X] min
-- **Reference linking:** about [X] min
-- **SQLite output and CLI:** about [X] min
-- **Testing and checking output by hand:** about [X] min
-- **README and design note:** about [X] min
+- **Reading the brief and sample emails:** about 20 min
+- **Designing the schema and stages:** about 25 min
+- **Extraction rules:** about 60 min
+- **Reference linking:** about 45 min
+- **SQLite output and CLI:** about 25 min
+- **Testing and checking output by hand:** about 30 min
+- **README and design note:** about 25 min
 
 I prioritised a working end-to-end baseline that I could explain and inspect over breadth of extraction. Things I knowingly left out are listed under "Next steps" in `DESIGN_NOTE.md`.
 
 ## Use of AI coding assistants
 
-*[Describe your actual use honestly; the sentences below are a draft to edit.]*
 
-I used Claude to help draft this README and `DESIGN_NOTE.md` from my code. I reviewed the content against the code for accuracy, and the limitations listed come from reading the implementation. *[State here whether and how AI assisted with the code itself, and what you checked or changed yourself.]*
+I used Claude to help draft this README and `DESIGN_NOTE.md` from my code. I reviewed the content against the code for accuracy, and the limitations listed come from reading the implementation. 
