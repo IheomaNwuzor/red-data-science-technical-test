@@ -51,8 +51,6 @@ Delete `output/output.sqlite` before re-running; the relations and observations 
 
 ## Run time
 
-*[Fill in with your measured time, for example: "N emails processed in X seconds on <machine>", from `time python -m pipeline ...`.]*
-
 Cost is dominated by SQLite connection overhead (a new connection per insert) and by the fuzzy match, which scans the reference names for every unmatched mention. Both grow linearly with the number of mentions and are small at the scale of the sample data. For much larger volumes, the first fixes would be a single connection with batched inserts and a blocking step before fuzzy matching.
 
 ## Extending the pipeline
@@ -92,7 +90,6 @@ Cost is dominated by SQLite connection overhead (a new connection per insert) an
 
 ## How I used my time
 
-*[Adjust the split to what actually happened; the total must stay within the 4-hour cap.]*
 
 - **Reading the brief and sample emails:** about 20 min
 - **Designing the schema and stages:** about 25 min
